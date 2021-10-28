@@ -1,4 +1,3 @@
-//OTAxNDc5MDAyNjUxMzgxNzcw.YXQdvg.a6JpQayvuGg8nMPIYoCU1nmINr8
 
 const { Client, Intents } = require('discord.js');
 
@@ -47,5 +46,5 @@ client.on('message', message =>{
 
 
 
-client.login("OTAxNDc5MDAyNjUxMzgxNzcw.YXQdvg.a6JpQayvuGg8nMPIYoCU1nmINr8")
+client.login("Token")
 
