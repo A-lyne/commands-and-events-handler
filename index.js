@@ -1,12 +1,14 @@
 //OTAxNDc5MDAyNjUxMzgxNzcw.YXQdvg.a6JpQayvuGg8nMPIYoCU1nmINr8
+
+const { Client, Intents } = require('discord.js');
+
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+
 /*
-const Discord = require('discord.js');
-const client = new Discord.Client({ intents: [ 'DIRECT_MESSAGES', 'GUILD_MESSAGES' ] });
-*/
 const { Discord, Intents, Client } = require('discord.js');
 
 const client = new Client({ intents: [ 'DIRECT_MESSAGES', 'GUILD_MESSAGES' ] });
-
+*/
 
 const  prefix = '!';
 
@@ -16,6 +18,7 @@ client.events = new Discord.Collection();
 ['command_handler','event_handler'].forEach(handler =>{
     require (`./handlers/${handler}`)(client, Discord);
 })
+
 /*
 client.on('ready', ()=>{
     console.log('Bot online')
@@ -35,7 +38,7 @@ client.on('message', message =>{
     
     }
     else if (command === 'bestyoutubechannel'){
-        message.channel.send('**Go subscribe you little shit** https://youtube.balance2.live');
+        message.channel.send('**Go subscribe ** https://youtube.balance2.live');
 
     }
 })*/
